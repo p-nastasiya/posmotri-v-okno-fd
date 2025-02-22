@@ -255,7 +255,7 @@ ol {
 
 .search-form__textfield:focus-visible {
 	outline: 1px solid #fff;
-	Ы outline-offset: 2px;
+	outline-offset: 2px;
 	box-sizing: border-box;
 }
 
