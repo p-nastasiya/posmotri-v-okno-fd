@@ -78,7 +78,7 @@ ol {
 	text-transform: uppercase;
 	vertical-align: bottom;
 	display: table-cell;
-	padding-top: 6px;
+	padding-top: 4px;
 }
 
 .result {
@@ -116,8 +116,8 @@ ol {
 }
 
 .content__list-container {
-	height: 298px;
-	margin-top: 26px;
+	block-size: 298px;
+	margin-top: 20px;
 	overflow: auto;
 	position: relative;
 }
@@ -131,8 +131,7 @@ ol {
 }
 
 .content__list-item {
-	width: 390px;
-	padding: 0 3px;
+	inline-size: 390px;
 }
 
 .content__card-link {
@@ -140,6 +139,10 @@ ol {
 	text-decoration: none;
 	color: #fff;
 	cursor: pointer;
+}
+
+.content__card-link_current {
+	background-color: #545050;
 }
 
 .content__video-card {
@@ -166,10 +169,11 @@ ol {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 1;
+	padding-top: 4px;
+	text-align: start;
 }
 
 .content__video-card-description {
-
 	font-family: "Fira Sans Condensed", "Inter", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 16.2px;
@@ -197,14 +201,14 @@ ol {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	block-size: 54px;
+	line-height: 23px;
+	gap: 5px;
 }
 
 .search-form__fieldset-title {
 	font-family: "Fira Sans Condensed", "Inter", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: normal;
-	margin-bottom: 5px;
 }
 
 .search-form__label {
@@ -289,15 +293,15 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::after {
 	transition: transform 0.2s ease;
 }
 
-.search-form__submit-button .content__card-link:focus-visible {
+.content__card-link:focus-visible {
 	outline: 1px solid #fff;
 }
 
-.search-form__submit-button .content__card-link:hover {
+.content__card-link:hover {
 	text-decoration: underline;
 }
 
-.search-form__submit-button .content__card-link:active {
+.content__card-link:active {
 	background-color: #545050;
 }
 
@@ -321,7 +325,14 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::after {
 	color: #fff;
 	border: 1px solid currentColor;
 	cursor: pointer;
-	margin-top: 24px;
+}
+
+.button:hover {
+	text-decoration: underline;
+}
+
+.button:active {
+	background-color: #545050;
 }
 
 .more-button {
@@ -329,8 +340,4 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::after {
 	width: 100%;
 	margin-top: 30px;
 	cursor: pointer;
-}
-
-.content__card-link_current {
-	background-color: #545050;
 }
